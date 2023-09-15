@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Portfolio Website",
+        "screenshot": "/path/to/screenshot.png",
+        "description": "My personal portfolio website.",
+        "technologies": [
+            "React",
+            "TypeScript"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Portfolio Website 2",
+        "screenshot": "/path/to/screenshot.png",
+        "description": "My personal portfolio website.",
+        "technologies": [
+            "React",
+            "TypeScript"
+        ]
+    }
+]

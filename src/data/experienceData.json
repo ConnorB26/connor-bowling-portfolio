@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "date": "June 2023 - August 2023",
+        "position": "Software Engineer Intern",
+        "company": "Charles Schwab",
+        "description": "Developed frontend components using React.",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Sass",
+            "TypeScript",
+            "TypeScript",
+            "TypeScript",
+            "TypeScript"
+        ],
+        "website": "https://www.schwab.com/"
+    },
+    {
+        "id": 2,
+        "date": "June 2022 - August 2022",
+        "position": "R&D Programmer/Analyst Intern",
+        "company": "Global Shop Solutions",
+        "description": "Developed frontend components using React.",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Sass"
+        ],
+        "website": "https://www.globalshopsolutions.com/"
+    }
+]

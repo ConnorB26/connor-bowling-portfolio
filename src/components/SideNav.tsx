@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SideNav.module.css';
 import { Container } from 'react-bootstrap';
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 interface NavItemProps {
@@ -36,7 +36,7 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
         <Container className={styles.container} fluid>
             <div className={styles.topContainer}>
                 <div className={styles.nameContainer}>
-                    <a href="#" className={styles.name} onClick={handleNameClick}><h1>Connor Bowling</h1></a>
+                    <a href="/" className={styles.name} onClick={handleNameClick}><h1>Connor Bowling</h1></a>
                     <h2 className={styles.position}>Junior Software Engineer</h2>
                     <p className={styles.description}>A brief description about yourself.</p>
                 </div>

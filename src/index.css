@@ -8,3 +8,8 @@ body {
 body p {
   color: rgb(148, 163, 184);
 }
+
+:root {
+  --text-gray: rgb(148, 163, 184);
+  --text-dark-gray: rgb(100, 116, 139);
+}
