@@ -7,7 +7,8 @@
         "technologies": [
             "React",
             "TypeScript"
-        ]
+        ],
+        "website": "https://www.schwab.com/"
     },
     {
         "id": 2,
@@ -17,6 +18,29 @@
         "technologies": [
             "React",
             "TypeScript"
-        ]
+        ],
+        "website": "https://www.schwab.com/"
+    },
+    {
+        "id": 3,
+        "title": "Portfolio Website 2",
+        "screenshot": "/path/to/screenshot.png",
+        "description": "My personal portfolio website.",
+        "technologies": [
+            "React",
+            "TypeScript"
+        ],
+        "website": "https://www.schwab.com/"
+    },
+    {
+        "id": 4,
+        "title": "Portfolio Website 2",
+        "screenshot": "/path/to/screenshot.png",
+        "description": "My personal portfolio website.",
+        "technologies": [
+            "React",
+            "TypeScript"
+        ],
+        "website": "https://www.schwab.com/"
     }
 ]

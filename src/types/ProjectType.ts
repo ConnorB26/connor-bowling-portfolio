@@ -4,4 +4,5 @@ export default interface Project {
     screenshot: string;
     description: string;
     technologies: string[];
+    website: string;
 }

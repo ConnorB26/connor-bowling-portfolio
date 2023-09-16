@@ -28,5 +28,31 @@
             "Sass"
         ],
         "website": "https://www.globalshopsolutions.com/"
+    },
+    {
+        "id": 3,
+        "date": "June 2022 - August 2022",
+        "position": "R&D Programmer/Analyst Intern",
+        "company": "Global Shop Solutions",
+        "description": "Developed frontend components using React.",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Sass"
+        ],
+        "website": "https://www.globalshopsolutions.com/"
+    },
+    {
+        "id": 4,
+        "date": "June 2022 - August 2022",
+        "position": "R&D Programmer/Analyst Intern",
+        "company": "Global Shop Solutions",
+        "description": "Developed frontend components using React.",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Sass"
+        ],
+        "website": "https://www.globalshopsolutions.com/"
     }
 ]

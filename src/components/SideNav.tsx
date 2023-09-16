@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './SideNav.module.css';
 import { Container } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -8,11 +8,12 @@ interface NavItemProps {
     label: string;
     href: string;
     isActive: boolean;
+    onClick: () => void;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ label, href, isActive }) => {
+const NavItem: React.FC<NavItemProps> = ({ label, href, isActive, onClick }) => {
     return (
-        <a href={href} className={`${styles.navItem} ${isActive ? 'active' : ''}`}>
+        <a href={href} className={`${styles.navItem} ${isActive ? styles.active : ''}`} onClick={onClick}>
             <span className={styles.indicator}></span>
             {label}
         </a>
@@ -24,6 +25,26 @@ interface SideNavProps {
 }
 
 const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
+    const [userClickedSection, setUserClickedSection] = useState<string | null>(null);
+    const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+    const handleNavClick = (section: string) => {
+        setUserClickedSection(section);
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+        timeoutRef.current = setTimeout(() => {
+            setUserClickedSection(null);
+        }, 1000);
+    };
+
+    const getIsActive = (section: string): boolean => {
+        if (userClickedSection) {
+            return userClickedSection === section;
+        }
+        return activeSection === section;
+    };
+
     const navigate = useNavigate();
 
     const handleNameClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -42,9 +63,9 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                 </div>
 
                 <div className={styles.navContainer}>
-                    <NavItem label="About" href="#about" isActive={activeSection === "about"} />
-                    <NavItem label="Experience" href="#experience" isActive={activeSection === "experience"} />
-                    <NavItem label="Projects" href="#projects" isActive={activeSection === "projects"} />
+                    <NavItem label="About" href="#about" isActive={getIsActive("about")} onClick={() => handleNavClick("about")} />
+                    <NavItem label="Experience" href="#experience" isActive={getIsActive("experience")} onClick={() => handleNavClick("experience")} />
+                    <NavItem label="Projects" href="#projects" isActive={getIsActive("projects")} onClick={() => handleNavClick("projects")} />
                 </div>
             </div>
 

@@ -1,27 +1,28 @@
-.experienceSection {
+.cardSection {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.experienceSection a {
+.cardSection a {
     margin: 1rem 0;
     display: inline-block;
     width: 100%;
     text-decoration: none;
+    margin-bottom: 2rem;
 }
 
-.experienceSection a:hover {
+.cardSection a:hover {
     text-decoration: none;
 }
 
-.experienceSection:hover .experienceCard:not(:hover) {
+.cardSection:hover .card:not(:hover) {
     opacity: 0.5;
 }
 
-.experienceCard {
+.card {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     margin: 0;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
@@ -30,13 +31,18 @@
     position: relative;
 }
 
-.experienceCard:hover {
+.card:hover {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.experienceCard:hover h4 {
+.card:hover h4 {
+    color: #5eead4;
+    transition: color 0.2s;
+}
+
+.card:hover h5 {
     color: #5eead4;
     transition: color 0.2s;
 }
@@ -99,13 +105,78 @@
     top: 20px;
 }
 
-.experienceCard:hover .externalLinkIcon {
+.card:hover .externalLinkIcon {
     color: #5eead4;
     transform: scale(1.3);
+}
+
+.textLink,
+.textLink svg {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+}
+
+.textLink:hover {
+    color: #5eead4;
+}
+
+.textLink:hover svg {
+    color: #5eead4;
+    transform: translateX(.5rem);
+}
+
+.thumbnail {
+    flex-basis: 125px;
+    flex-shrink: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.spacer {
+    height: 6rem;
+}
+
+.sectionHeader {
+    display: none;
 }
 
 @media (max-width: 992px) {
     .hiddenCol {
         display: none;
+    }
+
+    .spacer {
+        height: 4rem;
+    }
+
+    .stickyWrapper {
+        position: relative;
+    }
+
+    .sectionHeader {
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(10px);
+        z-index: 10;
+        padding: .5rem 0rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: left;
+        color: white;
+        display: inline-block;
+        width: 100%;
     }
 }
