@@ -5,7 +5,6 @@ import SideNav from '../components/SideNav';
 import styles from './HomePage.module.css';
 import { Col, Row } from 'react-bootstrap';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { BsArrowRight } from 'react-icons/bs';
 import experienceData from '../data/experienceData.json';
 import projectsData from '../data/projectsData.json';
 import Experience from '../types/ExperienceType';
@@ -32,7 +31,7 @@ const HomePage: React.FC = () => {
                     <SideNav activeSection={activeSection} />
                 </Col>
                 <Col lg={5} md={12}>
-                    <div className={styles.spacer} id='about'></div>
+                    <div className={styles.tallSpacer} id='about'></div>
 
                     <div className={styles.stickyWrapper}>
                         <div className={styles.sectionHeader}>About</div>
@@ -41,7 +40,9 @@ const HomePage: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className={styles.spacer} id='experience'></div>
+                    <div className={styles.spacer}></div>
+                    <div className={styles.divider} id='experience'></div>
+                    <div className={styles.spacer}></div>
 
                     <div className={styles.stickyWrapper}>
                         <div className={styles.sectionHeader}>Experience</div>
@@ -49,7 +50,11 @@ const HomePage: React.FC = () => {
                             {experienceData.map((exp: Experience) => (
                                 <a href={exp.website} target="_blank" rel="noopener noreferrer" key={exp.id}>
                                     <div className={styles.card}>
-                                        <div className={styles.date}>{exp.date}</div>
+                                        <div className={styles.date}>
+                                            <span className={styles.startDate}>{exp.startDate}</span>
+                                            <div className={styles.timeline}></div>
+                                            <span className={styles.endDate}>{exp.endDate}</span>
+                                        </div>
                                         <div className={styles.details}>
                                             <h4>{exp.position}</h4>
                                             <h5>{exp.company}</h5>
@@ -65,10 +70,11 @@ const HomePage: React.FC = () => {
                                 </a>
                             ))}
                         </div>
-                        <a href="/resume" target="_blank" rel="noopener noreferrer" className={styles.textLink}>See Full Resume <BsArrowRight /></a>
                     </div>
 
-                    <div className={styles.spacer} id='projects'></div>
+                    <div className={styles.spacer}></div>
+                    <div className={styles.divider} id='projects'></div>
+                    <div className={styles.spacer}></div>
 
                     <div className={styles.stickyWrapper}>
                         <div className={styles.sectionHeader}>Projects</div>
@@ -93,7 +99,6 @@ const HomePage: React.FC = () => {
                                 </a>
                             ))}
                         </div>
-                        <a href="/projects" target="_blank" rel="noopener noreferrer" className={styles.textLink}>See Project Archive <BsArrowRight /></a>
                     </div>
 
                     <div className={styles.spacer}></div>

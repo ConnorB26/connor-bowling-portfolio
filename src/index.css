@@ -1,15 +1,20 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(15, 23, 42);
+  background-color: #1b2a41;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232c3e55' fill-opacity='0.07' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 body p {
-  color: rgb(148, 163, 184);
+  color: var(--text-gray);
 }
 
 :root {
   --text-gray: rgb(148, 163, 184);
   --text-dark-gray: rgb(100, 116, 139);
+  --primary-accent: #25CC76;
+  --secondary-accent: #2C3E55;
+  --highlight: #F5C542;
 }

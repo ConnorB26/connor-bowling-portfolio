@@ -3,6 +3,7 @@ import styles from './SideNav.module.css';
 import { Container } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { BsArrowRight } from 'react-icons/bs';
 
 interface NavItemProps {
     label: string;
@@ -14,7 +15,6 @@ interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ label, href, isActive, onClick }) => {
     return (
         <a href={href} className={`${styles.navItem} ${isActive ? styles.active : ''}`} onClick={onClick}>
-            <span className={styles.indicator}></span>
             {label}
         </a>
     );
@@ -61,6 +61,8 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                     <h2 className={styles.position}>Junior Software Engineer</h2>
                     <p className={styles.description}>A brief description about yourself.</p>
                 </div>
+
+                <a href="/resume" target="_blank" rel="noopener noreferrer" className={styles.textLink}>Resume <BsArrowRight /></a>
 
                 <div className={styles.navContainer}>
                     <NavItem label="About" href="#about" isActive={getIsActive("about")} onClick={() => handleNavClick("about")} />

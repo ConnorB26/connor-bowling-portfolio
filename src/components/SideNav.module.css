@@ -31,27 +31,37 @@
     align-items: center;
     margin-top: 2rem;
     cursor: pointer;
-    color: rgb(148, 163, 184);
+    color: var(--text-gray);
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, font-weight 0.3s, transform 0.3s;
+    padding-left: 14px;
 }
 
-.indicator {
-    height: 1px;
-    width: 30px;
-    background-color: rgb(148, 163, 184);
-    margin-right: 1rem;
-    transition: width 0.15s;
+.navItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s, left 0.3s;
 }
 
-.navItem:hover .indicator,
-.navItem.active .indicator {
-    width: 65px;
-    background-color: white;
+.navItem:hover::before,
+.navItem.active::before {
+    transform: scaleX(1);
+    left: 0px;
 }
 
 .navItem:hover,
 .navItem.active {
-    color: white;
+    color: var(--primary-accent);
+    transform: translateX(25px) scale(1.1);
 }
 
 .topContainer {
@@ -65,7 +75,7 @@
 }
 
 .socialIcon {
-    color: rgb(148, 163, 184);
+    color: var(--text-gray);
     margin-right: 1rem;
     font-size: 2rem;
     transition: color 0.3s;
@@ -75,6 +85,23 @@
     color: white;
 }
 
+.textLink,
+.textLink svg {
+    text-decoration: none;
+    color: var(--highlight);
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.textLink:hover {
+    color: var(--primary-accent);
+}
+
+.textLink:hover svg {
+    color: var(--primary-accent);
+    transform: translateX(.5rem);
+}
+
 @media (max-width: 992px) {
     .navContainer {
         display: none;
@@ -82,5 +109,9 @@
 
     .container {
         height: 100%;
+    }
+
+    .textLink {
+        margin-bottom: 1rem;
     }
 }

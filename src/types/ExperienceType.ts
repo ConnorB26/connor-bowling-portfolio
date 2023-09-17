@@ -1,6 +1,7 @@
 export default interface Experience {
     id: number;
-    date: string;
+    startDate: string;
+    endDate: string;
     position: string;
     company: string;
     description: string;
