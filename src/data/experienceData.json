@@ -4,18 +4,15 @@
         "startDate": "August 2023",
         "endDate": "December 2023",
         "position": "CSCE 331 Teaching Assistant",
-        "company": "Charles Schwab",
-        "description": "Developed frontend components using React.",
+        "company": "TAMUG CSCE Department",
+        "description": "Directed lab sessions encompassing a range from foundational HTML, CSS to intricate backend and frontend development. Actively evaluated and graded assignments, offering students constructive feedback to foster their growth. Facilitated office hours to provide personalized support and address specific student inquiries.",
         "technologies": [
-            "React",
-            "TypeScript",
-            "Sass",
-            "TypeScript",
-            "TypeScript",
-            "TypeScript",
-            "TypeScript"
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "GitHub"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://www.tamug.edu/academics/departments.html#Computer-Science-and-Engineering"
     },
     {
         "id": 2,
@@ -23,15 +20,14 @@
         "endDate": "August 2023",
         "position": "Software Engineer Intern",
         "company": "Charles Schwab",
-        "description": "Developed frontend components using React.",
+        "description": "Developed a full-stack tool using .NET Core and React TS, designed for real-time microservices monitoring and notifications. Expertly deployed the application via IIS onto a Windows server, further instituting a persistent Windows service for dynamic polling and consistent updates. Contributed to a scalable and impactful codebase, anticipated to serve as a foundation for various teams.",
         "technologies": [
-            "React",
-            "TypeScript",
-            "Sass",
-            "TypeScript",
-            "TypeScript",
-            "TypeScript",
-            "TypeScript"
+            ".NET Core",
+            "React TS",
+            "IIS",
+            "JIRA",
+            "Confluence",
+            "Bitbucket"
         ],
         "website": "https://www.schwab.com/"
     },
@@ -40,14 +36,15 @@
         "startDate": "August 2022",
         "endDate": "May 2023",
         "position": "Undergraduate Researcher",
-        "company": "Global Shop Solutions",
-        "description": "Developed frontend components using React.",
+        "company": "Sketch Recognition Lab",
+        "description": "Conducted rigorous research to explore the efficacy of a video game as a tool to enhance handwriting skills. Led the game's design and development, leveraging Unity and C#, successfully capturing and analyzing handwriting data in real-time, ensuring valuable player feedback and performance evaluation.",
         "technologies": [
-            "React",
-            "TypeScript",
-            "Sass"
+            "Unity",
+            "C#",
+            "Optical Character Recognition",
+            "Online Handwriting Analysis"
         ],
-        "website": "https://www.globalshopsolutions.com/"
+        "website": "https://srltamu.com/"
     },
     {
         "id": 4,
@@ -55,11 +52,13 @@
         "endDate": "August 2022",
         "position": "Programmer/Analyst Intern",
         "company": "Global Shop Solutions",
-        "description": "Developed frontend components using React.",
+        "description": "Participated in the revamp of COBOL screens by employing DevExpress WinForms within a .NET framework. Designed efficient application functionalities in Visual Basic for streamlined database interactions and updates.",
         "technologies": [
-            "React",
-            "TypeScript",
-            "Sass"
+            "COBOL",
+            "DevExpress WinForms",
+            ".NET",
+            "Visual Basic",
+            "GitHub"
         ],
         "website": "https://www.globalshopsolutions.com/"
     }

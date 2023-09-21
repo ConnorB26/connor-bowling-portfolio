@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+# [Connor Bowling's Personal Portfolio](https://connorbowling.com/) - Showcasing Skills, Experiences, and Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Connor Bowling's Personal Portfolio website. This platform serves as a holistic representation of my journey, skills, experiences, and projects in the realm of software engineering, web development, and game design. Conceived as an avenue to display my competencies and to delve deeper into React and TypeScript, this website stands as both a testament to my achievements and a learning endeavor.
 
-## Available Scripts
+### The Journey of Crafting the Website
 
-In the project directory, you can run:
+While my proficiency in software development has grown over the years, crafting this website presented its own set of unique challenges. Balancing aesthetics with functionality, ensuring responsiveness across devices, and offering a seamless user experience were all crucial objectives I aimed to achieve. There were instances where I iterated over designs multiple times, making sure every component not only looked the part but also functioned flawlessly.
 
-### `npm start`
+To tackle these intricacies, I leveraged a myriad of online resources, sought feedback, and continuously refined the user interface and user experience. The culmination of these efforts resulted in this website, a synthesis of design and functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Continuous Evolution & Future Enhancements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This portfolio website is emblematic of my journey in tech, encapsulating lessons learned, challenges overcome, and milestones achieved. As the tech landscape is ever-evolving and my own journey is continuously unfolding, this website will mirror that progression. I aim to periodically update it with new projects, experiences, and any advancements in my skills.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+As I venture deeper into the world of tech, I remain committed to learning and adapting. Just as this website has evolved, so too will my skills and offerings, ensuring that visitors always get an up-to-date view of my professional journey.

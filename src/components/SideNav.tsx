@@ -59,10 +59,10 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                 <div className={styles.nameContainer}>
                     <a href="/" className={styles.name} onClick={handleNameClick}><h1>Connor Bowling</h1></a>
                     <h2 className={styles.position}>Junior Software Engineer</h2>
-                    <p className={styles.description}>A brief description about yourself.</p>
+                    <p className={styles.description}>Bridging the gap between humans and technology with cutting-edge solutions and interactive experiences.</p>
                 </div>
 
-                <a href="/resume" target="_blank" rel="noopener noreferrer" className={styles.textLink}>Resume <BsArrowRight /></a>
+                <a href="https://drive.google.com/file/d/1xVSFtmVFo54qaA_uwgGYNh_F-e0wqIXH/view" target="_blank" rel="noopener noreferrer" className={styles.textLink}>Resume <BsArrowRight /></a>
 
                 <div className={styles.navContainer}>
                     <NavItem label="About" href="#about" isActive={getIsActive("about")} onClick={() => handleNavClick("about")} />

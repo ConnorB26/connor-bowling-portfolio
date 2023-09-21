@@ -1,68 +1,95 @@
 [
     {
         "id": 1,
-        "title": "Portfolio Website",
-        "screenshot": "/path/to/screenshot.png",
-        "description": "My personal portfolio website.",
+        "title": "Personal Portfolio",
+        "screenshot": "/assets/thumbnails/portfolio_site.png",
+        "description": "Designed and developed a modern, responsive personal portfolio to showcase my skills, experiences, and projects. The site acts as a central hub for potential employers and collaborators to learn more about me and my work.",
         "technologies": [
             "React",
-            "TypeScript"
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "Bootstrap"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://github.com/ConnorB26/connor-bowling-portfolio"
     },
     {
         "id": 2,
-        "title": "TAMU Esports Infrastructure",
-        "screenshot": "/path/to/screenshot.png",
-        "description": "My personal portfolio website.",
+        "title": "Texas A&M Esports Infrastructure",
+        "screenshot": "/assets/thumbnails/esports_site.png",
+        "description": "Pioneered the technical infrastructure for Texas A&M Esports, leveraging Docker and AWS-hosted Postgres. The project also involved the development of a robust Discord bot with a secure Nest JS backend for automating membership management, further enhanced by Google Scripts and Flywire integrations.",
         "technologies": [
-            "React",
-            "TypeScript"
+            "Docker",
+            "AWS",
+            "Postgres",
+            "Discord API",
+            "Nest JS",
+            "Google Scripts",
+            "Flywire"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://github.com/ConnorB26/TAMU_Esports_Infrastructure"
     },
     {
         "id": 3,
         "title": "College Notes",
-        "screenshot": "/path/to/screenshot.png",
-        "description": "My personal portfolio website.",
+        "screenshot": "/assets/thumbnails/college_notes.png",
+        "description": "Designed a Kotlin-based mobile app focused on student notetaking and schedule management. The app is built using Jetpack Compose and follows the MVVM design pattern in a clean architecture framework, offering seamless CRUD functionalities for managing notes, classes, and calendar events.",
         "technologies": [
-            "React",
-            "TypeScript"
+            "Kotlin",
+            "Jetpack Compose",
+            "MVVM"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://github.com/ConnorB26/College-Notes"
     },
     {
         "id": 4,
-        "title": "Olympus Navigator",
-        "screenshot": "/path/to/screenshot.png",
-        "description": "My personal portfolio website.",
+        "title": "Video Game Design Portfolio",
+        "screenshot": "/assets/thumbnails/bowling_game_design.png",
+        "description": "Crafted a dedicated website to exhibit my video game projects. The frontend was developed using a combination of JavaScript, React, HTML, and CSS, providing an interactive experience for users.",
         "technologies": [
+            "JavaScript",
             "React",
-            "TypeScript"
+            "HTML",
+            "CSS",
+            "Bootstrap"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://github.com/ConnorB26/game-design-portfolio"
     },
     {
         "id": 5,
-        "title": "Bowling Game Design",
-        "screenshot": "/path/to/screenshot.png",
-        "description": "My personal portfolio website.",
+        "title": "Olympus Navigator",
+        "screenshot": "/assets/thumbnails/olympus_navigator.png",
+        "description": "Created a Discord bot to assist server members in tracking their progress and goals within a game. The bot utilizes JavaScript for its core functionalities and integrates with a MySQL database to store and manage user-related information.",
         "technologies": [
-            "React",
-            "TypeScript"
+            "JavaScript",
+            "Discord API",
+            "MySQL"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://github.com/ConnorB26/Olympus-Navigator"
     },
     {
         "id": 6,
-        "title": "Geo Genre",
-        "screenshot": "/path/to/screenshot.png",
-        "description": "My personal portfolio website.",
+        "title": "TAMU Personal Page",
+        "screenshot": "/assets/thumbnails/tamu_personal_page.png",
+        "description": "Crafted a personal website as part of a CSCE 315 project. Built purely using foundational web technologies without relying on any frameworks, the site offers a glimpse into my early web development journey.",
         "technologies": [
-            "React",
-            "TypeScript"
+            "HTML",
+            "CSS",
+            "JavaScript"
         ],
-        "website": "https://www.schwab.com/"
+        "website": "https://github.com/ConnorB26/TAMU_Personal_Page"
+    },
+    {
+        "id": 7,
+        "title": "Aggie Geo Genre",
+        "screenshot": "/assets/thumbnails/geo_genre.png",
+        "description": "Developed an innovative mobile app that plays different genre playlists based on the user's location within the Texas A&M University – College Station campus. This was achieved by integrating both Spotify and Google APIs in an Android Studio environment, coded primarily in Java.",
+        "technologies": [
+            "Android Studio",
+            "Java",
+            "Spotify API",
+            "Google API"
+        ],
+        "website": "https://github.com/ConnorB26/GeoGenre"
     }
 ]

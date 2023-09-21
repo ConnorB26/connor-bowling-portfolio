@@ -174,6 +174,17 @@
     opacity: 0.5;
 }
 
+.textLink {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.textLink:hover {
+    color: var(--primary-accent);
+}
+
 @media (max-width: 992px) {
     .hiddenCol {
         display: none;
@@ -190,14 +201,28 @@
     .sectionHeader {
         position: sticky;
         top: 0;
-        backdrop-filter: blur(10px);
+        color: var(--highlight);
         z-index: 10;
         padding: .5rem 0rem;
         font-size: 1.25rem;
         font-weight: bold;
         text-align: left;
-        color: white;
-        display: inline-block;
+        display: block;
+        
+    }
+
+    .blurEffect {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 3rem;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
+
+    .hidden {
+        display: none;
     }
 }
