@@ -81,6 +81,18 @@
     },
     {
         "id": 7,
+        "title": "The Golden Expansion",
+        "screenshot": "/assets/thumbnails/golden_expansion.png",
+        "description": "A Minecraft mod that introduces a gold-centric theme, expanding the game with new golden versions of pre-existing items and plants, along with a new dimension with golden grass, trees, and sky. Developed using the Forge Mod Development Kit, this project marked my first experience modding a game and delving into a comprehensive pre-existing codebase.",
+        "technologies": [
+            "Java",
+            "Gradle",
+            "Eclipse"
+        ],
+        "website": "https://github.com/ConnorB26/TheGoldenExpansion"
+    },
+    {
+        "id": 8,
         "title": "Aggie Geo Genre",
         "screenshot": "/assets/thumbnails/geo_genre.png",
         "description": "Developed an innovative mobile app that plays different genre playlists based on the user's location within the Texas A&M University – College Station campus. This was achieved by integrating both Spotify and Google APIs in an Android Studio environment, coded primarily in Java.",
