@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Associate Cloud Engineer",
+        "issuer": "Google Cloud",
+        "website": "https://www.credly.com/badges/7382681a-91e1-4f9a-9478-2e409fe34235"
+    },
+    {
+        "id": 2,
+        "title": "GitHub Actions",
+        "issuer": "GitHub",
+        "website": "https://www.credly.com/badges/546d5490-0ba0-4bbb-92b4-e0281fb70971"
+    },
+    {
+        "id": 3,
+        "title": "GitHub Foundations",
+        "issuer": "GitHub",
+        "website": "https://www.credly.com/badges/d3e017ef-c859-49ce-9d2a-60f48cc7bbf5"
+    }
+]

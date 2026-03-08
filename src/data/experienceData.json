@@ -1,26 +1,44 @@
 [
     {
         "id": 1,
+        "startDate": "June 2024",
+        "endDate": "Present",
+        "position": "Associate Software Engineer",
+        "company": "Charles Schwab",
+        "description": "Building and maintaining high-traffic C#/.NET APIs at scale, with ownership spanning design, deployment, and production reliability. Took the lead on delivering a greenfield API service end-to-end, and contributed to improving the team's testing and CI/CD practices. Work spans both backend systems and full-stack internal tooling.",
+        "technologies": [
+            "C#",
+            ".NET Core",
+            "React TS",
+            "NoSQL",
+            "Docker",
+            "Reqnroll",
+            "CI/CD"
+        ],
+        "website": "https://www.schwab.com/"
+    },
+    {
+        "id": 2,
         "startDate": "August 2023",
         "endDate": "December 2023",
-        "position": "CSCE 331 Teaching Assistant",
-        "company": "TAMUG CSCE Department",
-        "description": "Directed lab sessions encompassing a range from foundational HTML, CSS to intricate backend and frontend development. Actively evaluated and graded assignments, offering students constructive feedback to foster their growth. Facilitated office hours to provide personalized support and address specific student inquiries.",
+        "position": "Foundations of Software Engineering Teaching Assistant",
+        "company": "Texas A&M CSCE Department",
+        "description": "Supported students across full-stack development topics including frontend and backend principles, software design, and engineering best practices. Led lab sessions, graded assignments with constructive feedback, and held office hours for individualized guidance.",
         "technologies": [
             "HTML",
             "CSS",
             "JavaScript",
             "GitHub"
         ],
-        "website": "https://www.tamug.edu/academics/departments.html#Computer-Science-and-Engineering"
+        "website": "https://engineering.tamu.edu/cse"
     },
     {
-        "id": 2,
+        "id": 3,
         "startDate": "June 2023",
         "endDate": "August 2023",
         "position": "Software Engineer Intern",
         "company": "Charles Schwab",
-        "description": "Developed a full-stack tool using .NET Core and React TS, designed for real-time microservices monitoring and notifications. Expertly deployed the application via IIS onto a Windows server, further instituting a persistent Windows service for dynamic polling and consistent updates. Contributed to a scalable and impactful codebase, anticipated to serve as a foundation for various teams.",
+        "description": "Built a full-stack internal tool using .NET Core and React TypeScript for real-time microservices monitoring and notifications. Deployed the application via IIS onto a Windows server and implemented a persistent Windows service for dynamic polling and updates.",
         "technologies": [
             ".NET Core",
             "React TS",
@@ -32,12 +50,12 @@
         "website": "https://www.schwab.com/"
     },
     {
-        "id": 3,
+        "id": 4,
         "startDate": "August 2022",
         "endDate": "May 2023",
         "position": "Undergraduate Researcher",
         "company": "Sketch Recognition Lab",
-        "description": "Conducted rigorous research to explore the efficacy of a video game as a tool to enhance handwriting skills. Led the game's design and development, leveraging Unity and C#, successfully capturing and analyzing handwriting data in real-time, ensuring valuable player feedback and performance evaluation.",
+        "description": "Designed and developed a Unity game in C# for a research study on game-based handwriting skill improvement. Integrated real-time handwriting data capture and analysis into the game, and conducted a study with 15+ participants as part of an undergraduate research thesis.",
         "technologies": [
             "Unity",
             "C#",
@@ -47,12 +65,12 @@
         "website": "https://srltamu.com/"
     },
     {
-        "id": 4,
+        "id": 5,
         "startDate": "June 2022",
         "endDate": "August 2022",
         "position": "Programmer/Analyst Intern",
         "company": "Global Shop Solutions",
-        "description": "Participated in the revamp of COBOL screens by employing DevExpress WinForms within a .NET framework. Designed efficient application functionalities in Visual Basic for streamlined database interactions and updates.",
+        "description": "Modernized legacy COBOL interfaces by rebuilding them using .NET WinForms and Visual Basic, improving usability and database interaction efficiency.",
         "technologies": [
             "COBOL",
             "DevExpress WinForms",
