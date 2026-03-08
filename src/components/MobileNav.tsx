@@ -8,6 +8,7 @@ interface MobileNavProps {
 const sections = [
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
+    { id: 'certifications', label: 'Certs' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
 ];

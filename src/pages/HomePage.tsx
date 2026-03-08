@@ -14,8 +14,10 @@ import skillsData from '../data/skillsData.json';
 import Experience from '../types/ExperienceType';
 import Project from '../types/ProjectType';
 import SkillCategory from '../types/SkillType';
+import certificationsData from '../data/certificationsData.json';
+import Certification from '../types/CertificationType';
 
-const SECTIONS = ['about', 'skills', 'experience', 'projects'] as const;
+const SECTIONS = ['about', 'skills', 'certifications', 'experience', 'projects'] as const;
 
 const cardContainerVariants = {
     hidden: {},
@@ -136,6 +138,24 @@ const HomePage: React.FC = () => {
                                                 ))}
                                             </ul>
                                         </div>
+                                    ))}
+                                </div>
+                            </AnimatedSection>
+                        </div>
+
+                        <div className={styles.spacer}></div>
+                        <div className={styles.divider} id='certifications'></div>
+                        <div className={styles.spacer}></div>
+
+                        <div className={styles.stickyWrapper}>
+                            <div data-section-header className={styles.sectionHeader}>Certifications</div>
+                            <AnimatedSection>
+                                <div className={styles.certSection}>
+                                    {certificationsData.map((cert: Certification) => (
+                                        <a href={cert.website} target="_blank" rel="noopener noreferrer" key={cert.id} className={styles.certItem}>
+                                            <span className={styles.certTitle}>{cert.title}</span>
+                                            <span className={styles.certIssuer}>{cert.issuer}</span>
+                                        </a>
                                     ))}
                                 </div>
                             </AnimatedSection>

@@ -67,6 +67,7 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                 <div className={styles.navContainer}>
                     <NavItem label="About" href="#about" isActive={getIsActive("about")} onClick={() => handleNavClick("about")} />
                     <NavItem label="Skills" href="#skills" isActive={getIsActive("skills")} onClick={() => handleNavClick("skills")} />
+                    <NavItem label="Certifications" href="#certifications" isActive={getIsActive("certifications")} onClick={() => handleNavClick("certifications")} />
                     <NavItem label="Experience" href="#experience" isActive={getIsActive("experience")} onClick={() => handleNavClick("experience")} />
                     <NavItem label="Projects" href="#projects" isActive={getIsActive("projects")} onClick={() => handleNavClick("projects")} />
                 </div>
