@@ -1,9 +1,20 @@
 [
     {
         "id": 1,
+        "title": "PowerWords",
+        "screenshot": "/assets/thumbnails/power_words.png",
+        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Working within a live, third-party API environment gave me experience with event-driven programming and shipping software to real users via CurseForge.",
+        "technologies": [
+            "Lua",
+            "WoW API"
+        ],
+        "website": "https://www.curseforge.com/wow/addons/powerwords"
+    },
+    {
+        "id": 2,
         "title": "Personal Portfolio",
         "screenshot": "/assets/thumbnails/portfolio_site.png",
-        "description": "Designed and developed a modern, responsive personal portfolio to showcase my skills, experiences, and projects. The site acts as a central hub for potential employers and collaborators to learn more about me and my work.",
+        "description": "A responsive personal portfolio built to present my skills, experience, and projects in one place. Designed and developed from scratch, this site gave me hands-on experience with React and TypeScript while focusing on clean UI, smooth animations, and a polished user experience.",
         "technologies": [
             "React",
             "TypeScript",
@@ -14,13 +25,12 @@
         "website": "https://github.com/ConnorB26/connor-bowling-portfolio"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Texas A&M Esports Infrastructure",
         "screenshot": "/assets/thumbnails/esports_site.png",
-        "description": "Pioneered the technical infrastructure for Texas A&M Esports, leveraging Docker and AWS-hosted Postgres. The project also involved the development of a robust Discord bot with a secure Nest JS backend for automating membership management, further enhanced by Google Scripts and Flywire integrations.",
+        "description": "Built the full technical backbone for a university esports organization, including a Discord bot, a secure REST API backend, and a Postgres database, all hosted on a GCP Compute Engine instance. Integrated with third-party payment and script automation tools to streamline membership management. This project was my first large-scale system design effort, covering deployment, cloud infrastructure, and real-world reliability requirements.",
         "technologies": [
-            "Docker",
-            "AWS",
+            "GCP",
             "Postgres",
             "Discord API",
             "Nest JS",
@@ -30,10 +40,10 @@
         "website": "https://github.com/ConnorB26/TAMU_Esports_Infrastructure"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "College Notes",
         "screenshot": "/assets/thumbnails/college_notes.png",
-        "description": "Designed a Kotlin-based mobile app focused on student notetaking and schedule management. The app is built using Jetpack Compose and follows the MVVM design pattern in a clean architecture framework, offering seamless CRUD functionalities for managing notes, classes, and calendar events.",
+        "description": "A mobile app built to solve a personal need for better note and schedule organization during college. Built natively in Kotlin using Jetpack Compose and the MVVM architecture pattern, this project deepened my understanding of Android development, clean architecture, and state management in mobile UIs.",
         "technologies": [
             "Kotlin",
             "Jetpack Compose",
@@ -42,10 +52,10 @@
         "website": "https://github.com/ConnorB26/College-Notes"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Video Game Design Portfolio",
         "screenshot": "/assets/thumbnails/bowling_game_design.png",
-        "description": "Crafted a dedicated website to exhibit my video game projects. The frontend was developed using a combination of JavaScript, React, HTML, and CSS, providing an interactive experience for users.",
+        "description": "A dedicated site built to showcase personal game development projects. Created to practice frontend skills in React and explore how to present creative work effectively on the web.",
         "technologies": [
             "JavaScript",
             "React",
@@ -56,10 +66,10 @@
         "website": "https://github.com/ConnorB26/game-design-portfolio"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Olympus Navigator",
         "screenshot": "/assets/thumbnails/olympus_navigator.png",
-        "description": "Created a Discord bot to assist server members in tracking their progress and goals within a game. The bot utilizes JavaScript for its core functionalities and integrates with a MySQL database to store and manage user-related information.",
+        "description": "A Discord bot that connects to a MySQL database to store and retrieve user data on demand. Built to automate community management tasks, this project taught me how to design a bot with persistent state and gave me my first experience integrating a backend database with a real-time messaging platform.",
         "technologies": [
             "JavaScript",
             "Discord API",
@@ -68,10 +78,10 @@
         "website": "https://github.com/ConnorB26/Olympus-Navigator"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "TAMU Personal Page",
         "screenshot": "/assets/thumbnails/tamu_personal_page.png",
-        "description": "Crafted a personal website as part of a CSCE 315 project. Built purely using foundational web technologies without relying on any frameworks, the site offers a glimpse into my early web development journey.",
+        "description": "A personal website built as part of a university web development course, using only HTML, CSS, and vanilla JavaScript with no frameworks. Served as my introduction to frontend development and the foundations of building for the web.",
         "technologies": [
             "HTML",
             "CSS",
@@ -80,10 +90,10 @@
         "website": "https://github.com/ConnorB26/TAMU_Personal_Page"
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "The Golden Expansion",
         "screenshot": "/assets/thumbnails/golden_expansion.png",
-        "description": "A Minecraft mod that introduces a gold-centric theme, expanding the game with new golden versions of pre-existing items and plants, along with a new dimension with golden grass, trees, and sky. Developed using the Forge Mod Development Kit, this project marked my first experience modding a game and delving into a comprehensive pre-existing codebase.",
+        "description": "A content mod that extends an existing game with new items, plants, and a custom dimension. Built using the Forge Mod Development Kit, this was my first experience navigating a large, unfamiliar codebase and extending it without breaking existing functionality, an early lesson in reading and working within complex systems.",
         "technologies": [
             "Java",
             "Gradle",
@@ -92,10 +102,10 @@
         "website": "https://github.com/ConnorB26/TheGoldenExpansion"
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "Aggie Geo Genre",
         "screenshot": "/assets/thumbnails/geo_genre.png",
-        "description": "Developed an innovative mobile app that plays different genre playlists based on the user's location within the Texas A&M University – College Station campus. This was achieved by integrating both Spotify and Google APIs in an Android Studio environment, coded primarily in Java.",
+        "description": "A location-aware Android app that automatically switches music playlists based on where the user is on campus. Built by integrating the Spotify and Google Maps APIs, this was a team project that introduced me to third-party API authentication, geofencing, and coordinating multiple external services in a single app.",
         "technologies": [
             "Android Studio",
             "Java",
