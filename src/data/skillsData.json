@@ -1,0 +1,18 @@
+[
+    {
+        "category": "Languages",
+        "items": ["TypeScript", "JavaScript", "Python", "Java", "C#", "C++", "Kotlin", "SQL"]
+    },
+    {
+        "category": "Frontend",
+        "items": ["React", "HTML/CSS", "Bootstrap", "Jetpack Compose"]
+    },
+    {
+        "category": "Backend",
+        "items": [".NET Core", "Nest JS", "Node.js", "Discord API"]
+    },
+    {
+        "category": "Tools & Infrastructure",
+        "items": ["Docker", "AWS", "Git", "MySQL", "Postgres", "Unity"]
+    }
+]
