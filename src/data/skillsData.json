@@ -16,9 +16,7 @@
         "category": "Frontend",
         "items": [
             "React",
-            "HTML/CSS",
-            "Bootstrap",
-            "Jetpack Compose"
+            "HTML/CSS"
         ]
     },
     {
@@ -26,22 +24,7 @@
         "items": [
             ".NET Core",
             "Nest JS",
-            "Node.js",
-            "REST APIs",
-            "OpenAPI / Swagger",
-            "Microservices",
-            "Discord API"
-        ]
-    },
-    {
-        "category": "AI & Agents",
-        "items": [
-            "Claude API",
-            "Agentic Workflows",
-            "MCP Servers",
-            "AI Agents",
-            "Prompt Engineering",
-            "OpenAI API"
+            "Node.js"
         ]
     },
     {
@@ -50,10 +33,10 @@
             "Docker",
             "AWS",
             "GCP",
+            "PCF",
             "Git",
-            "MySQL",
-            "Postgres",
-            "Unity"
+            "Aerospike",
+            "Postgres"
         ]
     }
 ]

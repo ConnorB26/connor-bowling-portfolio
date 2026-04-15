@@ -5,6 +5,7 @@ export default interface Experience {
     position: string;
     company: string;
     description: string;
+    bullets: string[];
     technologies: string[];
     website: string;
 }

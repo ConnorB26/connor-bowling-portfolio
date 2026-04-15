@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import styles from './SideNav.module.css';
 import { Container } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
 interface NavItemProps {
@@ -62,7 +62,7 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                     <p className={styles.description}>Backend engineer learning fast enough to not get replaced by AI. Probably.</p>
                 </div>
 
-                <a href="https://drive.google.com/file/d/1xVSFtmVFo54qaA_uwgGYNh_F-e0wqIXH/view" target="_blank" rel="noopener noreferrer" className={styles.resumeButton}>Resume <BsArrowRight /></a>
+                <Link to="/resume" className={styles.resumeButton}>Resume <BsArrowRight /></Link>
 
                 <div className={styles.navContainer}>
                     <NavItem label="About" href="#about" isActive={getIsActive("about")} onClick={() => handleNavClick("about")} />
