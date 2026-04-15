@@ -5,12 +5,19 @@
         "endDate": "Present",
         "position": "Associate Software Engineer",
         "company": "Charles Schwab",
-        "description": "Building and maintaining high-traffic C#/.NET APIs at scale, with ownership spanning design, deployment, and production reliability. Took the lead on delivering a greenfield API service end-to-end, and contributed to improving the team's testing and CI/CD practices. Work spans both backend systems and full-stack internal tooling.",
+        "description": "Building and maintaining C#/.NET APIs serving millions of daily client requests, with full ownership across design, deployment, and production reliability. Led the end-to-end delivery of a greenfield API service on Pivotal Cloud Foundry backed by Aerospike, and modernized the team's BDD testing infrastructure with Reqnroll and Docker. Also builds internal developer tooling in .NET Core and React TypeScript for application health monitoring and team productivity.",
+        "bullets": [
+            "Designed, developed, and maintained C#/.NET APIs serving millions of client requests daily, ensuring high reliability and performance",
+            "Led end-to-end architecture and deployment of a greenfield API service on Pivotal Cloud Foundry, backed by an Aerospike NoSQL data store",
+            "Modernized BDD testing infrastructure using Reqnroll and Docker, improving automation speed, reliability, and CI/CD integration",
+            "Built internal developer tooling in .NET Core and React TypeScript for application health monitoring and team productivity"
+        ],
         "technologies": [
             "C#",
             ".NET Core",
             "React TS",
-            "NoSQL",
+            "Aerospike",
+            "PCF",
             "Docker",
             "Reqnroll",
             "CI/CD"
@@ -23,7 +30,10 @@
         "endDate": "December 2023",
         "position": "Foundations of Software Engineering Teaching Assistant",
         "company": "Texas A&M CSCE Department",
-        "description": "Supported students across full-stack development topics including frontend and backend principles, software design, and engineering best practices. Led lab sessions, graded assignments with constructive feedback, and held office hours for individualized guidance.",
+        "description": "Led weekly lab sessions for a class of 20 students in Foundations of Software Engineering, covering full-stack development fundamentals, software design principles, and engineering best practices. Graded assignments with constructive feedback and held office hours for individualized guidance.",
+        "bullets": [
+            "Led weekly lab sessions for a class of 20 students covering full-stack development fundamentals, software design principles, and engineering best practices"
+        ],
         "technologies": [
             "HTML",
             "CSS",
@@ -38,7 +48,11 @@
         "endDate": "August 2023",
         "position": "Software Engineer Intern",
         "company": "Charles Schwab",
-        "description": "Built a full-stack internal tool using .NET Core and React TypeScript for real-time microservices monitoring and notifications. Deployed the application via IIS onto a Windows server and implemented a persistent Windows service for dynamic polling and updates.",
+        "description": "Built a full-stack internal tool in .NET Core and React TypeScript to monitor live API health, detect service changes, and proactively alert teams to failures and outages via email notifications. Deployed via IIS on a Windows server with a persistent background service handling continuous real-time polling.",
+        "bullets": [
+            "Built a .NET Core and React TypeScript dashboard to monitor live API health, detect service changes, and proactively alert teams to failures and outages via email notifications",
+            "Deployed via IIS on a Windows server with a persistent background service continuously polling for real-time status updates"
+        ],
         "technologies": [
             ".NET Core",
             "React TS",
@@ -55,12 +69,17 @@
         "endDate": "May 2023",
         "position": "Undergraduate Researcher",
         "company": "Sketch Recognition Lab",
-        "description": "Designed and developed a Unity game in C# for a research study on game-based handwriting skill improvement. Integrated real-time handwriting data capture and analysis into the game, and conducted a study with 15+ participants as part of an undergraduate research thesis.",
+        "description": "Designed and developed a Unity game in C# for a research study on game-based handwriting skill improvement. Integrated Google Cloud Vision OCR to validate written input and built a custom handwriting analysis system evaluating stroke smoothness, writing speed, cursive level, and consistency. Conducted a study with 15+ participants as part of an undergraduate research thesis.",
+        "bullets": [
+            "Designed and developed a Unity (C#) video game for handwriting-skill enhancement research, integrating real-time data capture and analysis",
+            "Conducted a study with 15+ participants as part of an undergraduate thesis on game-based learning"
+        ],
         "technologies": [
             "Unity",
             "C#",
-            "Optical Character Recognition",
-            "Online Handwriting Analysis"
+            "Google Cloud Vision",
+            "OCR",
+            "Handwriting Analysis"
         ],
         "website": "https://srltamu.com/"
     },
@@ -70,7 +89,11 @@
         "endDate": "August 2022",
         "position": "Programmer/Analyst Intern",
         "company": "Global Shop Solutions",
-        "description": "Modernized legacy COBOL interfaces by rebuilding them using .NET WinForms and Visual Basic, improving usability and database interaction efficiency.",
+        "description": "Modernized a legacy COBOL ERP system used by manufacturing companies for supply management, rebuilding multiple screens in .NET WinForms and Visual Basic. Redesigned the team's COBOL-to-VB auto-conversion framework to support multi-item form generation, extending it beyond its original single-item constraint.",
+        "bullets": [
+            "Rebuilt multiple screens of a legacy COBOL ERP system in .NET WinForms and Visual Basic for manufacturing supply management",
+            "Redesigned the team's COBOL-to-VB auto-conversion framework to support multi-item form generation, extending it beyond its original single-item limitation"
+        ],
         "technologies": [
             "COBOL",
             "DevExpress WinForms",

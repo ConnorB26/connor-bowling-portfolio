@@ -3,6 +3,10 @@ export default interface Project {
     title: string;
     screenshot: string;
     description: string;
+    bullets: string[];
+    showOnResume: boolean;
+    startDate?: string;
+    endDate?: string;
     technologies: string[];
     website: string;
 }

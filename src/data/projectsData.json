@@ -3,18 +3,29 @@
         "id": 1,
         "title": "PowerWords",
         "screenshot": "/assets/thumbnails/power_words.png",
-        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Working within a live, third-party API environment gave me experience with event-driven programming and shipping software to real users via CurseForge.",
+        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Actively maintained on CurseForge with 100+ users, working within a live third-party API environment gave me hands-on experience with event-driven programming and shipping updates to a real player base.",
+        "bullets": [
+            "Built and published a Lua addon that hooks into the WoW API to respond to player events and trigger configurable actions",
+            "Actively maintained on CurseForge with 100+ users, shipping updates to a live player base through a third-party platform"
+        ],
+        "showOnResume": true,
+        "startDate": "January 2026",
         "technologies": [
             "Lua",
             "WoW API"
         ],
-        "website": "https://www.curseforge.com/wow/addons/powerwords"
+        "website": "https://github.com/ConnorB26/PowerWords"
     },
     {
         "id": 2,
         "title": "Personal Portfolio",
         "screenshot": "/assets/thumbnails/portfolio_site.png",
         "description": "A responsive personal portfolio built to present my skills, experience, and projects in one place. Designed and developed from scratch, this site gave me hands-on experience with React and TypeScript while focusing on clean UI, smooth animations, and a polished user experience.",
+        "bullets": [
+            "Designed and developed a responsive portfolio site from scratch using React and TypeScript",
+            "Focused on clean UI, smooth animations, and a polished user experience"
+        ],
+        "showOnResume": false,
         "technologies": [
             "React",
             "TypeScript",
@@ -28,7 +39,15 @@
         "id": 3,
         "title": "Texas A&M Esports Infrastructure",
         "screenshot": "/assets/thumbnails/esports_site.png",
-        "description": "Built the full technical backbone for a university esports organization, including a Discord bot, a secure REST API backend, and a Postgres database, all hosted on a GCP Compute Engine instance. Integrated with third-party payment and script automation tools to streamline membership management. This project was my first large-scale system design effort, covering deployment, cloud infrastructure, and real-world reliability requirements.",
+        "description": "Architected and deployed the full technical infrastructure for Texas A&M Esports from scratch on GCP Compute Engine — a containerized React TypeScript frontend, Nest.js backend, and PostgreSQL database in a single Docker Compose stack, exposed securely via Cloudflare Tunnel. Built a Discord bot integrated with the university's payment system to automate end-to-end membership management: students purchase dues, claim membership through the bot, and are automatically granted server permissions, giving officers real-time visibility into eligibility for competitive play. Actively maintained across multiple semesters, supporting 500+ students and multiple competitive teams.",
+        "bullets": [
+            "Architected and deployed the full technical infrastructure for Texas A&M Esports on GCP Compute Engine, running a React TypeScript frontend, Nest.js backend, and PostgreSQL database in a Docker Compose stack exposed via Cloudflare Tunnel",
+            "Built a Discord bot integrated with the university's payment system to automate end-to-end membership management, automatically granting server permissions upon dues payment with real-time officer visibility into player eligibility",
+            "Sustained in production for 3+ years across multiple semesters, processing thousands of dollars in student dues and supporting 500+ students across multiple competitive teams"
+        ],
+        "showOnResume": true,
+        "startDate": "March 2023",
+        "endDate": "Present",
         "technologies": [
             "GCP",
             "Postgres",
@@ -44,6 +63,11 @@
         "title": "College Notes",
         "screenshot": "/assets/thumbnails/college_notes.png",
         "description": "A mobile app built to solve a personal need for better note and schedule organization during college. Built natively in Kotlin using Jetpack Compose and the MVVM architecture pattern, this project deepened my understanding of Android development, clean architecture, and state management in mobile UIs.",
+        "bullets": [
+            "Built a native Android note and schedule organization app in Kotlin using Jetpack Compose and MVVM architecture",
+            "Applied structured state management and clean architecture patterns to deliver a responsive, well-organized mobile experience"
+        ],
+        "showOnResume": true,
         "technologies": [
             "Kotlin",
             "Jetpack Compose",
@@ -56,6 +80,11 @@
         "title": "Video Game Design Portfolio",
         "screenshot": "/assets/thumbnails/bowling_game_design.png",
         "description": "A dedicated site built to showcase personal game development projects. Created to practice frontend skills in React and explore how to present creative work effectively on the web.",
+        "bullets": [
+            "Built a dedicated portfolio site in React to showcase personal game development projects",
+            "Explored how to present creative work effectively on the web"
+        ],
+        "showOnResume": false,
         "technologies": [
             "JavaScript",
             "React",
@@ -70,6 +99,11 @@
         "title": "Olympus Navigator",
         "screenshot": "/assets/thumbnails/olympus_navigator.png",
         "description": "A Discord bot that connects to a MySQL database to store and retrieve user data on demand. Built to automate community management tasks, this project taught me how to design a bot with persistent state and gave me my first experience integrating a backend database with a real-time messaging platform.",
+        "bullets": [
+            "Built a Discord bot backed by a MySQL database to automate community management and user data retrieval",
+            "First experience integrating a backend database with a real-time messaging platform"
+        ],
+        "showOnResume": false,
         "technologies": [
             "JavaScript",
             "Discord API",
@@ -82,6 +116,10 @@
         "title": "TAMU Personal Page",
         "screenshot": "/assets/thumbnails/tamu_personal_page.png",
         "description": "A personal website built as part of a university web development course, using only HTML, CSS, and vanilla JavaScript with no frameworks. Served as my introduction to frontend development and the foundations of building for the web.",
+        "bullets": [
+            "Built a personal website using only HTML, CSS, and vanilla JavaScript as an introduction to frontend development"
+        ],
+        "showOnResume": false,
         "technologies": [
             "HTML",
             "CSS",
@@ -94,6 +132,11 @@
         "title": "The Golden Expansion",
         "screenshot": "/assets/thumbnails/golden_expansion.png",
         "description": "A content mod that extends an existing game with new items, plants, and a custom dimension. Built using the Forge Mod Development Kit, this was my first experience navigating a large, unfamiliar codebase and extending it without breaking existing functionality, an early lesson in reading and working within complex systems.",
+        "bullets": [
+            "Built a content mod using the Forge MDK, extending an existing game with new items, plants, and a custom dimension",
+            "First experience navigating and extending a large, unfamiliar codebase without breaking existing functionality"
+        ],
+        "showOnResume": false,
         "technologies": [
             "Java",
             "Gradle",
@@ -106,6 +149,11 @@
         "title": "Aggie Geo Genre",
         "screenshot": "/assets/thumbnails/geo_genre.png",
         "description": "A location-aware Android app that automatically switches music playlists based on where the user is on campus. Built by integrating the Spotify and Google Maps APIs, this was a team project that introduced me to third-party API authentication, geofencing, and coordinating multiple external services in a single app.",
+        "bullets": [
+            "Built an Android app that automatically switches Spotify playlists based on campus location using Google Maps geofencing",
+            "Integrated third-party API authentication across Spotify and Google APIs in a team project"
+        ],
+        "showOnResume": false,
         "technologies": [
             "Android Studio",
             "Java",
