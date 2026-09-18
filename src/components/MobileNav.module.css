@@ -33,6 +33,10 @@
         position: relative;
     }
 
+    .navTab:visited {
+        color: var(--text-dark-gray);
+    }
+
     .navTab.active {
         color: var(--primary-accent);
     }
