@@ -129,7 +129,7 @@ const HomePage: React.FC = () => {
                                 <div className={styles.skillsSection}>
                                     {skillsData.map((group: SkillCategory) => (
                                         <div key={group.category} className={styles.skillGroup}>
-                                            <h4 className={styles.skillCategory}>{group.category}</h4>
+                                            <h3 className={styles.skillCategory}>{group.category}</h3>
                                             <ul className={styles.technologies}>
                                                 {group.items.map(skill => (
                                                     <li key={skill}>{skill}</li>
