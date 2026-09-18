@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import styles from './SideNav.module.css';
 import { Container } from 'react-bootstrap';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -26,7 +26,7 @@ interface SideNavProps {
 
 const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
     const [userClickedSection, setUserClickedSection] = useState<string | null>(null);
-    const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+    const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const handleNavClick = (section: string) => {
         setUserClickedSection(section);
@@ -59,7 +59,7 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                 <div className={styles.nameContainer}>
                     <a href="/" className={styles.name} onClick={handleNameClick}><h1>Connor Bowling</h1></a>
                     <h2 className={styles.position}>Software Engineer</h2>
-                    <p className={styles.description}>Backend engineer learning fast enough to not get replaced by AI. Probably.</p>
+                    <p className={styles.description}>Backend engineer building reliable .NET APIs and internal tooling.</p>
                 </div>
 
                 <Link to="/resume" className={styles.resumeButton}>Resume <BsArrowRight /></Link>
@@ -74,11 +74,14 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
             </div>
 
             <div className={styles.socialContainer}>
-                <a href="https://github.com/connorb26" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/connorb26" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <FaGithub className={styles.socialIcon} />
                 </a>
-                <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <FaLinkedin className={styles.socialIcon} />
+                </a>
+                <a href="mailto:connorbowling26@gmail.com" aria-label="Email">
+                    <FaEnvelope className={styles.socialIcon} />
                 </a>
             </div>
         </Container>

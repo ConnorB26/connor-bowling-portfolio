@@ -2,23 +2,34 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { BsPrinter } from 'react-icons/bs';
 import { BsArrowLeft } from 'react-icons/bs';
+import { BsDownload } from 'react-icons/bs';
 import styles from './ResumePage.module.css';
 import experienceData from '../data/experienceData.json';
 import projectsData from '../data/projectsData.json';
 import certificationsData from '../data/certificationsData.json';
 import educationData from '../data/educationData.json';
+import skillsData from '../data/skillsData.json';
 import Experience from '../types/ExperienceType';
 import Project from '../types/ProjectType';
 import Certification from '../types/CertificationType';
 import Education from '../types/EducationType';
+import SkillCategory from '../types/SkillType';
+
+const skillGroups = skillsData as SkillCategory[];
+const languages = skillGroups.find(g => g.category === 'Languages')?.items ?? [];
+const frameworksAndTools = skillGroups
+    .filter(g => g.category !== 'Languages')
+    .flatMap(g => g.items);
 
 const resumeSkills = [
-    { category: 'Languages', items: 'C#, TypeScript, JavaScript, Python, Java, C++, Kotlin, SQL' },
-    { category: 'Frameworks & Tools', items: '.NET Core, React, Nest JS, Node.js, Docker, AWS, GCP, PCF, Git, Aerospike, Postgres' },
+    { category: 'Languages', items: languages.join(', ') },
+    { category: 'Frameworks & Tools', items: frameworksAndTools.join(', ') },
 ];
 
 const ResumePage: React.FC = () => {
-    const resumeProjects = (projectsData as Project[]).filter(p => p.showOnResume);
+    const resumeProjects = (projectsData as Project[])
+        .filter(p => p.showOnResume)
+        .sort((a, b) => (a.resumeOrder ?? 0) - (b.resumeOrder ?? 0));
 
     useEffect(() => {
         document.title = 'Connor Bowling - Resume';
@@ -32,9 +43,14 @@ const ResumePage: React.FC = () => {
                     <BsArrowLeft /> Portfolio
                 </Link>
                 <div className={styles.printActions}>
-                    <button className={styles.printButton} onClick={() => window.print()}>
-                        <BsPrinter /> Print / Save as PDF
-                    </button>
+                    <div className={styles.printActionsRow}>
+                        <a href="/resume.pdf" download className={styles.printButton}>
+                            <BsDownload /> Download PDF
+                        </a>
+                        <button className={styles.printButton} onClick={() => window.print()}>
+                            <BsPrinter /> Print / Save as PDF
+                        </button>
+                    </div>
                     <span className={styles.printHint}>In print dialog: More settings → uncheck Headers and footers</span>
                 </div>
             </div>
@@ -124,23 +140,19 @@ const ResumePage: React.FC = () => {
 
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>Certifications</h2>
-                    <div className={styles.certRow}>
-                        {(certificationsData as Certification[]).map((cert, i, arr) => (
-                            <React.Fragment key={cert.id}>
-                                <a
-                                    href={cert.website}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.certLink}
-                                    style={{ textAlign: (['left', 'center', 'right'] as const)[i] }}
-                                >
-                                    {cert.title}
-                                    <span className={styles.certIssuer}> ({cert.issuer})</span>
-                                </a>
-                                {i < arr.length - 1 && <div className={styles.certDivider} />}
-                            </React.Fragment>
-                        ))}
-                    </div>
+                    {(certificationsData as Certification[]).map(cert => {
+                        const showIssuer = !cert.title.toLowerCase().includes(cert.issuer.toLowerCase());
+                        return (
+                            <div key={cert.id} className={styles.certEntry}>
+                                <div className={styles.entryHeader}>
+                                    <a href={cert.website} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                                        {cert.title} {showIssuer && <span className={styles.certIssuer}>({cert.issuer})</span>}
+                                    </a>
+                                    <span className={styles.entryDate}>{cert.date}</span>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </section>
             </div>
         </div>

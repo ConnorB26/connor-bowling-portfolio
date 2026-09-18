@@ -5,6 +5,7 @@ export default interface Project {
     description: string;
     bullets: string[];
     showOnResume: boolean;
+    resumeOrder?: number;
     startDate?: string;
     endDate?: string;
     technologies: string[];

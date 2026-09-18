@@ -110,10 +110,10 @@ const HomePage: React.FC = () => {
                         <div className={styles.tallSpacer} id='about'></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>About</div>
+                            <h2 data-section-header className={styles.sectionHeader}>About</h2>
                             <AnimatedSection>
                                 <div className={styles.aboutSection}>
-                                    <p>Howdy, I'm Connor Bowling, a Software Engineer at Charles Schwab where I work on .NET APIs and internal tooling. I graduated from Texas A&M University with a B.S. in Computer Science in 2024, though my path into coding started well before that.</p>
+                                    <p>Howdy, I'm Connor Bowling, a Software Engineer at Charles Schwab. I graduated from Texas A&M University with a B.S. in Computer Science in 2024 — though my path into coding started well before that.</p>
                                     <p>It started through game development in C#, not through any formal class. Most of what I know came from picking something up and building with it: games, apps, websites, and a Linux homelab for self-hosting and experimenting. That habit has carried into my career, where I keep picking up new technologies, usually to improve how I or other developers work. Game development is still where I go when I want to build something just for fun, and you can find some of those projects on my <a href="https://bowlinggamedesign.com/" target="_blank" rel="noopener noreferrer" className={styles.textLink}>game design portfolio.</a></p>
                                 </div>
                             </AnimatedSection>
@@ -124,12 +124,12 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div className={styles.sectionHeader}>Skills</div>
+                            <h2 className={styles.sectionHeader}>Skills</h2>
                             <AnimatedSection>
                                 <div className={styles.skillsSection}>
                                     {skillsData.map((group: SkillCategory) => (
                                         <div key={group.category} className={styles.skillGroup}>
-                                            <h4 className={styles.skillCategory}>{group.category}</h4>
+                                            <h3 className={styles.skillCategory}>{group.category}</h3>
                                             <ul className={styles.technologies}>
                                                 {group.items.map(skill => (
                                                     <li key={skill}>{skill}</li>
@@ -146,15 +146,18 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>Certifications</div>
+                            <h2 data-section-header className={styles.sectionHeader}>Certifications</h2>
                             <AnimatedSection>
                                 <div className={styles.certSection}>
-                                    {certificationsData.map((cert: Certification) => (
-                                        <a href={cert.website} target="_blank" rel="noopener noreferrer" key={cert.id} className={styles.certItem}>
-                                            <span className={styles.certTitle}>{cert.title}</span>
-                                            <span className={styles.certIssuer}>{cert.issuer}</span>
-                                        </a>
-                                    ))}
+                                    {certificationsData.map((cert: Certification) => {
+                                        const showIssuer = !cert.title.toLowerCase().includes(cert.issuer.toLowerCase());
+                                        return (
+                                            <a href={cert.website} target="_blank" rel="noopener noreferrer" key={cert.id} className={styles.certItem}>
+                                                <span className={styles.certTitle}>{cert.title}</span>
+                                                <span className={styles.certIssuer}>{showIssuer ? `${cert.issuer} · ` : ''}{cert.date}</span>
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </AnimatedSection>
                         </div>
@@ -164,7 +167,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>Experience</div>
+                            <h2 data-section-header className={styles.sectionHeader}>Experience</h2>
                             <motion.div
                                 className={styles.cardSection}
                                 variants={cardContainerVariants}
@@ -191,7 +194,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>Projects</div>
+                            <h2 data-section-header className={styles.sectionHeader}>Projects</h2>
                             <motion.div
                                 className={styles.cardSection}
                                 variants={cardContainerVariants}

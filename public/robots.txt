@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+Sitemap: https://connorbowling.com/sitemap.xml
