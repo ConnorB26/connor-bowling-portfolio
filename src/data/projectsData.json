@@ -1,41 +1,5 @@
 [
     {
-        "id": 1,
-        "title": "PowerWords",
-        "screenshot": "/assets/thumbnails/power_words.webp",
-        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Actively maintained on CurseForge with 100+ users, working within a live third-party API environment gave me hands-on experience with event-driven programming and shipping updates to a real player base.",
-        "bullets": [
-            "Built and published a Lua addon that hooks into the WoW API to respond to player events and trigger configurable actions",
-            "Actively maintained on CurseForge with 100+ users, shipping updates to a live player base through a third-party platform"
-        ],
-        "showOnResume": true,
-        "startDate": "January 2026",
-        "technologies": [
-            "Lua",
-            "WoW API"
-        ],
-        "website": "https://github.com/ConnorB26/PowerWords"
-    },
-    {
-        "id": 2,
-        "title": "Personal Portfolio",
-        "screenshot": "/assets/thumbnails/portfolio_site.webp",
-        "description": "A responsive personal portfolio built to present my skills, experience, and projects in one place. Designed and developed from scratch, this site gave me hands-on experience with React and TypeScript while focusing on clean UI, smooth animations, and a polished user experience.",
-        "bullets": [
-            "Designed and developed a responsive portfolio site from scratch using React and TypeScript",
-            "Focused on clean UI, smooth animations, and a polished user experience"
-        ],
-        "showOnResume": false,
-        "technologies": [
-            "React",
-            "TypeScript",
-            "HTML",
-            "CSS",
-            "Bootstrap"
-        ],
-        "website": "https://github.com/ConnorB26/connor-bowling-portfolio"
-    },
-    {
         "id": 3,
         "title": "Texas A&M Esports Infrastructure",
         "screenshot": "/assets/thumbnails/esports_site.webp",
@@ -59,6 +23,23 @@
         "website": "https://github.com/ConnorB26/TAMU_Esports_Infrastructure"
     },
     {
+        "id": 1,
+        "title": "PowerWords",
+        "screenshot": "/assets/thumbnails/power_words.webp",
+        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Actively maintained on CurseForge with 100+ users, working within a live third-party API environment gave me hands-on experience with event-driven programming and shipping updates to a real player base.",
+        "bullets": [
+            "Built and published a Lua addon that hooks into the WoW API to respond to player events and trigger configurable actions",
+            "Actively maintained on CurseForge with 100+ users, shipping updates to a live player base through a third-party platform"
+        ],
+        "showOnResume": true,
+        "startDate": "January 2026",
+        "technologies": [
+            "Lua",
+            "WoW API"
+        ],
+        "website": "https://github.com/ConnorB26/PowerWords"
+    },
+    {
         "id": 4,
         "title": "College Notes",
         "screenshot": "/assets/thumbnails/college_notes.webp",
@@ -68,12 +49,32 @@
             "Applied structured state management and clean architecture patterns to deliver a responsive, well-organized mobile experience"
         ],
         "showOnResume": true,
+        "startDate": "November 2020",
         "technologies": [
             "Kotlin",
             "Jetpack Compose",
             "MVVM"
         ],
         "website": "https://github.com/ConnorB26/College-Notes"
+    },
+    {
+        "id": 2,
+        "title": "Personal Portfolio",
+        "screenshot": "/assets/thumbnails/portfolio_site.webp",
+        "description": "A responsive personal portfolio built to present my skills, experience, and projects in one place. Designed and developed from scratch, this site gave me hands-on experience with React and TypeScript while focusing on clean UI, smooth animations, and a polished user experience.",
+        "bullets": [
+            "Designed and developed a responsive portfolio site from scratch using React and TypeScript",
+            "Focused on clean UI, smooth animations, and a polished user experience"
+        ],
+        "showOnResume": false,
+        "technologies": [
+            "React",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "website": "https://github.com/ConnorB26/connor-bowling-portfolio"
     },
     {
         "id": 5,
