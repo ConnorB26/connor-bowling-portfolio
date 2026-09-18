@@ -5,12 +5,12 @@
         "endDate": "Present",
         "position": "Associate Software Engineer",
         "company": "Charles Schwab",
-        "description": "Building and maintaining C#/.NET APIs serving millions of daily client requests, with full ownership across design, deployment, and production reliability. Led the end-to-end delivery of a greenfield API service on Pivotal Cloud Foundry backed by Aerospike, and modernized the team's BDD testing infrastructure with Reqnroll and Docker, cutting test runtime from 20-30 minutes down to just a few. Also champions AI adoption across the organization, building an internal framework that enables hundreds of developers to use GitHub Copilot in their day-to-day coding workflows.",
+        "description": "Building and maintaining C#/.NET APIs serving millions of daily client requests, with full ownership across design, deployment, and production reliability. Led the end-to-end delivery of a greenfield API service on Pivotal Cloud Foundry backed by Aerospike, and modernized the team's BDD testing infrastructure with Reqnroll and Docker, cutting test runtime from 20-30 minutes down to just a few. Also champions AI adoption across the organization, building an internal framework that enhances how hundreds of developers use GitHub Copilot in their day-to-day coding workflows.",
         "bullets": [
             "Designed, developed, and maintained C#/.NET APIs serving millions of client requests daily, ensuring high reliability and performance",
             "Led end-to-end architecture and deployment of a greenfield API service on Pivotal Cloud Foundry, backed by an Aerospike NoSQL data store",
             "Modernized BDD testing infrastructure using Reqnroll and Docker, cutting test suite runtime from 20-30 minutes to just a few minutes in both CI/CD and local runs",
-            "Championed AI adoption across the organization, building an internal framework that enables hundreds of developers to use GitHub Copilot in their day-to-day coding workflows"
+            "Championed AI adoption across the organization, building an internal framework that enhances how hundreds of developers use GitHub Copilot in their day-to-day coding workflows"
         ],
         "technologies": [
             "C#",
