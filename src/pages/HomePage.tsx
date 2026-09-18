@@ -149,12 +149,15 @@ const HomePage: React.FC = () => {
                             <h2 data-section-header className={styles.sectionHeader}>Certifications</h2>
                             <AnimatedSection>
                                 <div className={styles.certSection}>
-                                    {certificationsData.map((cert: Certification) => (
-                                        <a href={cert.website} target="_blank" rel="noopener noreferrer" key={cert.id} className={styles.certItem}>
-                                            <span className={styles.certTitle}>{cert.title}</span>
-                                            <span className={styles.certIssuer}>{cert.issuer} &middot; {cert.date}</span>
-                                        </a>
-                                    ))}
+                                    {certificationsData.map((cert: Certification) => {
+                                        const showIssuer = !cert.title.toLowerCase().includes(cert.issuer.toLowerCase());
+                                        return (
+                                            <a href={cert.website} target="_blank" rel="noopener noreferrer" key={cert.id} className={styles.certItem}>
+                                                <span className={styles.certTitle}>{cert.title}</span>
+                                                <span className={styles.certIssuer}>{showIssuer ? `${cert.issuer} · ` : ''}{cert.date}</span>
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </AnimatedSection>
                         </div>

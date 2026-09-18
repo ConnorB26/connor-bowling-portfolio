@@ -140,16 +140,19 @@ const ResumePage: React.FC = () => {
 
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>Certifications</h2>
-                    {(certificationsData as Certification[]).map(cert => (
-                        <div key={cert.id} className={styles.certEntry}>
-                            <div className={styles.entryHeader}>
-                                <a href={cert.website} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                                    {cert.title} <span className={styles.certIssuer}>({cert.issuer})</span>
-                                </a>
-                                <span className={styles.entryDate}>{cert.date}</span>
+                    {(certificationsData as Certification[]).map(cert => {
+                        const showIssuer = !cert.title.toLowerCase().includes(cert.issuer.toLowerCase());
+                        return (
+                            <div key={cert.id} className={styles.certEntry}>
+                                <div className={styles.entryHeader}>
+                                    <a href={cert.website} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                                        {cert.title} {showIssuer && <span className={styles.certIssuer}>({cert.issuer})</span>}
+                                    </a>
+                                    <span className={styles.entryDate}>{cert.date}</span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </section>
             </div>
         </div>
