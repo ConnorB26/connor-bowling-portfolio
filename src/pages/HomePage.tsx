@@ -113,7 +113,7 @@ const HomePage: React.FC = () => {
                             <h2 data-section-header className={styles.sectionHeader}>About</h2>
                             <AnimatedSection>
                                 <div className={styles.aboutSection}>
-                                    <p>Howdy, I'm Connor Bowling, a backend Software Engineer at Charles Schwab, where I build .NET APIs and internal tooling. I graduated from Texas A&M University with a B.S. in Computer Science in 2024 — though my path into coding started well before that.</p>
+                                    <p>Howdy, I'm Connor Bowling, a Software Engineer at Charles Schwab. I graduated from Texas A&M University with a B.S. in Computer Science in 2024 — though my path into coding started well before that.</p>
                                     <p>It started through game development in C#, not through any formal class. Most of what I know came from picking something up and building with it: games, apps, websites, and a Linux homelab for self-hosting and experimenting. That habit has carried into my career, where I keep picking up new technologies, usually to improve how I or other developers work. Game development is still where I go when I want to build something just for fun, and you can find some of those projects on my <a href="https://bowlinggamedesign.com/" target="_blank" rel="noopener noreferrer" className={styles.textLink}>game design portfolio.</a></p>
                                 </div>
                             </AnimatedSection>
