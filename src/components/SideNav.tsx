@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import styles from './SideNav.module.css';
 import { Container } from 'react-bootstrap';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -79,6 +79,9 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                 </a>
                 <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <FaLinkedin className={styles.socialIcon} />
+                </a>
+                <a href="mailto:connorbowling26@gmail.com" aria-label="Email">
+                    <FaEnvelope className={styles.socialIcon} />
                 </a>
             </div>
         </Container>

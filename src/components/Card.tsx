@@ -29,8 +29,8 @@ const Card: React.FC<CardProps> = ({ title, subtitle, description, technologies,
                 </div>
             )}
             <div className={styles.details}>
-                <h4>{title}</h4>
-                {subtitle && <h5>{subtitle}</h5>}
+                <h3>{title}</h3>
+                {subtitle && <h4>{subtitle}</h4>}
                 <FaExternalLinkAlt className={styles.externalLinkIcon} />
                 <p>{description}</p>
                 <ul className={styles.technologies}>

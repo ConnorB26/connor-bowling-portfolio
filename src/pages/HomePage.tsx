@@ -110,7 +110,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.tallSpacer} id='about'></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>About</div>
+                            <h2 data-section-header className={styles.sectionHeader}>About</h2>
                             <AnimatedSection>
                                 <div className={styles.aboutSection}>
                                     <p>Howdy, I'm Connor Bowling, a Software Engineer at Charles Schwab where I work on .NET APIs and internal tooling. I graduated from Texas A&M University with a B.S. in Computer Science in 2024, though my path into coding started well before that.</p>
@@ -124,7 +124,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div className={styles.sectionHeader}>Skills</div>
+                            <h2 className={styles.sectionHeader}>Skills</h2>
                             <AnimatedSection>
                                 <div className={styles.skillsSection}>
                                     {skillsData.map((group: SkillCategory) => (
@@ -146,7 +146,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>Certifications</div>
+                            <h2 data-section-header className={styles.sectionHeader}>Certifications</h2>
                             <AnimatedSection>
                                 <div className={styles.certSection}>
                                     {certificationsData.map((cert: Certification) => (
@@ -164,7 +164,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>Experience</div>
+                            <h2 data-section-header className={styles.sectionHeader}>Experience</h2>
                             <motion.div
                                 className={styles.cardSection}
                                 variants={cardContainerVariants}
@@ -191,7 +191,7 @@ const HomePage: React.FC = () => {
                         <div className={styles.spacer}></div>
 
                         <div className={styles.stickyWrapper}>
-                            <div data-section-header className={styles.sectionHeader}>Projects</div>
+                            <h2 data-section-header className={styles.sectionHeader}>Projects</h2>
                             <motion.div
                                 className={styles.cardSection}
                                 variants={cardContainerVariants}
