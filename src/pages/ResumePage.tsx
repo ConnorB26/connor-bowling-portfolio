@@ -138,23 +138,16 @@ const ResumePage: React.FC = () => {
 
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>Certifications</h2>
-                    <div className={styles.certRow}>
-                        {(certificationsData as Certification[]).map((cert, i, arr) => (
-                            <React.Fragment key={cert.id}>
-                                <a
-                                    href={cert.website}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.certLink}
-                                    style={{ textAlign: (['left', 'center', 'right'] as const)[i] }}
-                                >
-                                    {cert.title}
-                                    <span className={styles.certIssuer}> ({cert.issuer})</span>
+                    {(certificationsData as Certification[]).map(cert => (
+                        <div key={cert.id} className={styles.certEntry}>
+                            <div className={styles.entryHeader}>
+                                <a href={cert.website} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                                    {cert.title} <span className={styles.certIssuer}>({cert.issuer})</span>
                                 </a>
-                                {i < arr.length - 1 && <div className={styles.certDivider} />}
-                            </React.Fragment>
-                        ))}
-                    </div>
+                                <span className={styles.entryDate}>{cert.date}</span>
+                            </div>
+                        </div>
+                    ))}
                 </section>
             </div>
         </div>

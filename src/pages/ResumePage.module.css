@@ -221,36 +221,13 @@
 }
 
 /* Certifications */
-.certRow {
-    display: flex;
-    align-items: center;
-}
-
-.certLink {
-    flex: 1;
-    font-size: 9.5pt;
-    font-weight: 600;
-    color: #111;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.certLink:hover {
-    color: #25CC76;
-    text-decoration: underline;
+.certEntry {
+    margin-bottom: 0.3rem;
 }
 
 .certIssuer {
     font-weight: 400;
     color: #666;
-}
-
-.certDivider {
-    flex-shrink: 0;
-    width: 1px;
-    height: 1.1em;
-    border-left: 1px solid #bbb;
-    margin: 0 0.6rem;
 }
 
 /* Projects */
@@ -293,8 +270,8 @@
         box-shadow: none;
         padding: 0;
         max-width: 100%;
-        font-size: 9.5pt;
-        line-height: 1.37;
+        font-size: 9.1pt;
+        line-height: 1.32;
     }
 
     .header {
@@ -312,7 +289,7 @@
     }
 
     .section {
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.42rem;
         page-break-inside: avoid;
     }
 
@@ -322,7 +299,7 @@
     }
 
     .entry {
-        margin-bottom: 0.37rem;
+        margin-bottom: 0.3rem;
         page-break-inside: avoid;
     }
 
@@ -350,7 +327,7 @@
 
     .bullets li {
         font-size: 9pt;
-        margin-bottom: 0.07rem;
+        margin-bottom: 0.03rem;
     }
 
     .skillsGrid {
@@ -361,9 +338,8 @@
         font-size: 9pt;
     }
 
-    .certLink {
-        font-size: 8.5pt;
-        color: #111;
+    .certEntry {
+        margin-bottom: 0.12rem;
     }
 }
 

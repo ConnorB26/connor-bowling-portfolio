@@ -152,7 +152,7 @@ const HomePage: React.FC = () => {
                                     {certificationsData.map((cert: Certification) => (
                                         <a href={cert.website} target="_blank" rel="noopener noreferrer" key={cert.id} className={styles.certItem}>
                                             <span className={styles.certTitle}>{cert.title}</span>
-                                            <span className={styles.certIssuer}>{cert.issuer}</span>
+                                            <span className={styles.certIssuer}>{cert.issuer} &middot; {cert.date}</span>
                                         </a>
                                     ))}
                                 </div>
