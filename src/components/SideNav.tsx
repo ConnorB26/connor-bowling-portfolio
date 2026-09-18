@@ -59,7 +59,7 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
                 <div className={styles.nameContainer}>
                     <a href="/" className={styles.name} onClick={handleNameClick}><h1>Connor Bowling</h1></a>
                     <h2 className={styles.position}>Software Engineer</h2>
-                    <p className={styles.description}>Backend engineer building reliable .NET APIs at Charles Schwab.</p>
+                    <p className={styles.description}>Backend engineer building reliable .NET APIs and internal tooling.</p>
                 </div>
 
                 <Link to="/resume" className={styles.resumeButton}>Resume <BsArrowRight /></Link>
