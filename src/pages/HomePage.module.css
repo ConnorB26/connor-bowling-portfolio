@@ -196,6 +196,10 @@
     transition: color 0.2s;
 }
 
+.textLink:visited {
+    color: white;
+}
+
 .textLink:hover {
     color: var(--primary-accent);
 }

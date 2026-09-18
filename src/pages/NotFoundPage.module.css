@@ -29,6 +29,10 @@
     transition: color 0.2s, transform 0.2s;
 }
 
+.homeLink:visited {
+    color: var(--primary-accent);
+}
+
 .homeLink:hover {
     color: white;
     transform: translateX(-0.25rem);

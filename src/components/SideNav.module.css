@@ -13,6 +13,10 @@
     color: white;
 }
 
+.name:visited {
+    color: white;
+}
+
 .name h1 {
     font-size: 2.75rem;
     font-weight: bold;
@@ -39,6 +43,10 @@
     overflow: hidden;
     transition: color 0.3s, font-weight 0.3s, transform 0.3s;
     padding-left: 14px;
+}
+
+.navItem:visited {
+    color: var(--text-gray);
 }
 
 .navItem::before {
@@ -97,6 +105,10 @@
     font-weight: 600;
     margin-top: 0.5rem;
     transition: color 0.2s ease-in-out;
+}
+
+.resumeButton:visited {
+    color: var(--highlight);
 }
 
 .resumeButton svg {

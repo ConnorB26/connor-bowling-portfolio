@@ -27,15 +27,17 @@
         "id": 2,
         "title": "Personal Portfolio",
         "screenshot": "/assets/thumbnails/portfolio_site.webp",
-        "description": "A responsive personal portfolio built to present my skills, experience, and projects in one place. Designed and developed from scratch, this site gave me hands-on experience with React and TypeScript while focusing on clean UI, smooth animations, and a polished user experience.",
+        "description": "A responsive personal portfolio used to present my skills, experience, and projects in one place. Originally built by hand, it's since been iterated on with a mix of manual development and AI-assisted tooling to keep the design, content, and accessibility current.",
         "bullets": [
-            "Designed and developed a responsive portfolio site from scratch using React and TypeScript",
-            "Focused on clean UI, smooth animations, and a polished user experience"
+            "Built a responsive portfolio site to present my skills, experience, and projects in one place",
+            "Iterated on design, content, and accessibility over time using a mix of hand-written code and AI-assisted tooling"
         ],
         "showOnResume": false,
         "technologies": [
             "React",
             "TypeScript",
+            "Vite",
+            "Framer Motion",
             "HTML",
             "CSS",
             "Bootstrap"
@@ -109,6 +111,7 @@
         ],
         "showOnResume": false,
         "technologies": [
+            "Minecraft Forge",
             "Java",
             "Gradle",
             "Eclipse"

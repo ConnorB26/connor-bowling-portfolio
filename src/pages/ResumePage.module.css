@@ -27,6 +27,10 @@
     transition: color 0.2s;
 }
 
+.backLink:visited {
+    color: var(--text-gray);
+}
+
 .backLink:hover {
     color: var(--primary-accent);
 }
@@ -45,6 +49,10 @@
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     transition: color 0.2s;
+}
+
+.printButton:visited {
+    color: var(--highlight);
 }
 
 .printActions {
@@ -118,6 +126,10 @@
 .contact a {
     color: #333;
     text-decoration: none;
+}
+
+.contact a:visited {
+    color: #333;
 }
 
 .contact a:hover {
@@ -237,6 +249,10 @@
     color: #111;
     text-decoration: none;
     transition: color 0.2s;
+}
+
+.projectLink:visited {
+    color: #111;
 }
 
 .projectLink:hover {
