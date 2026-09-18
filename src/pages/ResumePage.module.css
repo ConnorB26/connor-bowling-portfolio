@@ -274,6 +274,11 @@
         size: letter;
     }
 
+    :global(body) {
+        background: white !important;
+        background-image: none !important;
+    }
+
     .page {
         background: none;
         padding: 0;
