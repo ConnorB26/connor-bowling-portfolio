@@ -26,7 +26,7 @@ interface SideNavProps {
 
 const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
     const [userClickedSection, setUserClickedSection] = useState<string | null>(null);
-    const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+    const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const handleNavClick = (section: string) => {
         setUserClickedSection(section);
@@ -74,10 +74,10 @@ const SideNav: React.FC<SideNavProps> = ({ activeSection }) => {
             </div>
 
             <div className={styles.socialContainer}>
-                <a href="https://github.com/connorb26" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/connorb26" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <FaGithub className={styles.socialIcon} />
                 </a>
-                <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <FaLinkedin className={styles.socialIcon} />
                 </a>
             </div>

@@ -10,5 +10,5 @@ The main challenge was balancing a clean design with enough content to be useful
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
