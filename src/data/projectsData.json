@@ -10,6 +10,7 @@
             "Sustained in production for 3+ years across multiple semesters, processing thousands of dollars in student dues and supporting 500+ students across multiple competitive teams"
         ],
         "showOnResume": true,
+        "resumeOrder": 1,
         "startDate": "March 2023",
         "endDate": "Present",
         "technologies": [
@@ -21,41 +22,6 @@
             "Flywire"
         ],
         "website": "https://github.com/ConnorB26/TAMU_Esports_Infrastructure"
-    },
-    {
-        "id": 1,
-        "title": "PowerWords",
-        "screenshot": "/assets/thumbnails/power_words.webp",
-        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Actively maintained on CurseForge with 100+ users, working within a live third-party API environment gave me hands-on experience with event-driven programming and shipping updates to a real player base.",
-        "bullets": [
-            "Built and published a Lua addon that hooks into the WoW API to respond to player events and trigger configurable actions",
-            "Actively maintained on CurseForge with 100+ users, shipping updates to a live player base through a third-party platform"
-        ],
-        "showOnResume": true,
-        "startDate": "January 2026",
-        "technologies": [
-            "Lua",
-            "WoW API"
-        ],
-        "website": "https://github.com/ConnorB26/PowerWords"
-    },
-    {
-        "id": 4,
-        "title": "College Notes",
-        "screenshot": "/assets/thumbnails/college_notes.webp",
-        "description": "A mobile app built to solve a personal need for better note and schedule organization during college. Built natively in Kotlin using Jetpack Compose and the MVVM architecture pattern, this project deepened my understanding of Android development, clean architecture, and state management in mobile UIs.",
-        "bullets": [
-            "Built a native Android note and schedule organization app in Kotlin using Jetpack Compose and MVVM architecture",
-            "Applied structured state management and clean architecture patterns to deliver a responsive, well-organized mobile experience"
-        ],
-        "showOnResume": true,
-        "startDate": "November 2020",
-        "technologies": [
-            "Kotlin",
-            "Jetpack Compose",
-            "MVVM"
-        ],
-        "website": "https://github.com/ConnorB26/College-Notes"
     },
     {
         "id": 2,
@@ -96,6 +62,60 @@
         "website": "https://github.com/ConnorB26/game-design-portfolio"
     },
     {
+        "id": 4,
+        "title": "College Notes",
+        "screenshot": "/assets/thumbnails/college_notes.webp",
+        "description": "A mobile app built to solve a personal need for better note and schedule organization during college. Built natively in Kotlin using Jetpack Compose and the MVVM architecture pattern, this project deepened my understanding of Android development, clean architecture, and state management in mobile UIs.",
+        "bullets": [
+            "Built a native Android note and schedule organization app in Kotlin using Jetpack Compose and MVVM architecture",
+            "Applied structured state management and clean architecture patterns to deliver a responsive, well-organized mobile experience"
+        ],
+        "showOnResume": true,
+        "resumeOrder": 3,
+        "startDate": "November 2020",
+        "technologies": [
+            "Kotlin",
+            "Jetpack Compose",
+            "MVVM"
+        ],
+        "website": "https://github.com/ConnorB26/College-Notes"
+    },
+    {
+        "id": 1,
+        "title": "PowerWords",
+        "screenshot": "/assets/thumbnails/power_words.webp",
+        "description": "A published game addon built in Lua that hooks into the game's native API to respond to player events and trigger configurable actions. Actively maintained on CurseForge with 100+ users, working within a live third-party API environment gave me hands-on experience with event-driven programming and shipping updates to a real player base.",
+        "bullets": [
+            "Built and published a Lua addon that hooks into the WoW API to respond to player events and trigger configurable actions",
+            "Actively maintained on CurseForge with 100+ users, shipping updates to a live player base through a third-party platform"
+        ],
+        "showOnResume": true,
+        "resumeOrder": 2,
+        "startDate": "January 2026",
+        "technologies": [
+            "Lua",
+            "WoW API"
+        ],
+        "website": "https://github.com/ConnorB26/PowerWords"
+    },
+    {
+        "id": 8,
+        "title": "The Golden Expansion",
+        "screenshot": "/assets/thumbnails/golden_expansion.webp",
+        "description": "A content mod that extends an existing game with new items, plants, and a custom dimension. Built using the Forge Mod Development Kit, this was my first experience navigating a large, unfamiliar codebase and extending it without breaking existing functionality, an early lesson in reading and working within complex systems.",
+        "bullets": [
+            "Built a content mod using the Forge MDK, extending an existing game with new items, plants, and a custom dimension",
+            "First experience navigating and extending a large, unfamiliar codebase without breaking existing functionality"
+        ],
+        "showOnResume": false,
+        "technologies": [
+            "Java",
+            "Gradle",
+            "Eclipse"
+        ],
+        "website": "https://github.com/ConnorB26/TheGoldenExpansion"
+    },
+    {
         "id": 6,
         "title": "Olympus Navigator",
         "screenshot": "/assets/thumbnails/olympus_navigator.webp",
@@ -127,23 +147,6 @@
             "JavaScript"
         ],
         "website": "https://github.com/ConnorB26/TAMU_Personal_Page"
-    },
-    {
-        "id": 8,
-        "title": "The Golden Expansion",
-        "screenshot": "/assets/thumbnails/golden_expansion.webp",
-        "description": "A content mod that extends an existing game with new items, plants, and a custom dimension. Built using the Forge Mod Development Kit, this was my first experience navigating a large, unfamiliar codebase and extending it without breaking existing functionality, an early lesson in reading and working within complex systems.",
-        "bullets": [
-            "Built a content mod using the Forge MDK, extending an existing game with new items, plants, and a custom dimension",
-            "First experience navigating and extending a large, unfamiliar codebase without breaking existing functionality"
-        ],
-        "showOnResume": false,
-        "technologies": [
-            "Java",
-            "Gradle",
-            "Eclipse"
-        ],
-        "website": "https://github.com/ConnorB26/TheGoldenExpansion"
     },
     {
         "id": 9,

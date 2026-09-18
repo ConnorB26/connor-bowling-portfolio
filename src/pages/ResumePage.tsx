@@ -27,7 +27,9 @@ const resumeSkills = [
 ];
 
 const ResumePage: React.FC = () => {
-    const resumeProjects = (projectsData as Project[]).filter(p => p.showOnResume);
+    const resumeProjects = (projectsData as Project[])
+        .filter(p => p.showOnResume)
+        .sort((a, b) => (a.resumeOrder ?? 0) - (b.resumeOrder ?? 0));
 
     useEffect(() => {
         document.title = 'Connor Bowling - Resume';
